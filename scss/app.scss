@@ -94,4 +94,29 @@ form {
             }
         }
     }
+
+    .submit {
+        display: flex;
+        margin-top: 2rem;
+
+        input[type="submit"] {
+
+            @include boton($primario);
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    .acciones {
+        display: flex;
+        justify-content: space-between;
+        margin-top: .5rem;
+        padding: .5rem 0;
+        margin: .5rem 0 8rem;
+
+        label, a {
+            font-size: .8rem;
+            text-decoration: none;
+        }
+    }
 }
