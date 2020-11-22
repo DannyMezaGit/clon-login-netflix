@@ -48,3 +48,31 @@ function validarInput(e){
         }
     }
 }
+
+// mostrar y ocultar password
+const mostrarPasswordBtn = document.querySelector('form .campo span');
+
+mostrarPasswordBtn.addEventListener('click', e => {
+    const passwordInput = document.querySelector('#password');
+
+    if (e.target.classList.contains('mostrar')) {
+        
+        // mostrar el texto
+        e.target.classList.remove('mostrar');
+        // cambiar el texto
+        e.target.textContent = 'Ocultar';
+        // Cambiamos a password
+        passwordInput.type = 'text';
+
+
+    } else {
+        // Mostrar el password
+        e.target.classList.add('mostrar');
+        // cambiar el texto
+        e.target.textContent = 'Mostrar';
+
+        // Cambiamos a password
+        passwordInput.type = 'password';
+    }
+
+})

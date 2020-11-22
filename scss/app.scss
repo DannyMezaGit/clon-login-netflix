@@ -81,6 +81,18 @@ form {
         display: flex;
         position: relative;
         margin-bottom: .8rem;
+
+        span {
+            position: absolute;
+            right: 1rem;
+            top: 1rem;
+            text-transform: uppercase;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+        }
         
         label {
             position: absolute;
